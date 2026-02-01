@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Для моего Данечки 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Таймер отношений -->
+    <div id="love-timer">
+        <div class="timer-title">
+            <i class="fas fa-heartbeat"></i> Наша любовь
+        </div>
+        <div id="timer-days">Загрузка...</div>
+        <div id="timer-details">💕 С 12 сентября 2024 💕</div>
+    </div>
+
+    <!-- Кнопка ночного режима -->
+    <button id="night-mode-btn">
+        <i class="fas fa-moon" id="night-icon"></i>
+        <span id="night-text">Ночной режим</span>
+    </button>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <h1>Для моего Данечки 💕</h1>
+        
+        <div class="subtitle">
+            <span class="heart">❤️</span> Ты — мое счастье <span class="heart">❤️</span>
+        </div>
+        
+        <div class="message">
+            <p>Каждый день с тобой — это подарок судьбы.</p>
+            <p>Ты сделал мою жизнь ярче, теплее и полнее смысла.</p>
+        </div>
+        
+        <div class="quote">
+            "Любовь — это когда твое сердце находит дом в другом человеке, и мой дом — это ты."
+        </div>
+        
+        <!-- Секретный блок -->
+        <div class="secret">
+            <h2><i class="fas fa-lock"></i> Наш маленький секрет</h2>
+            <p>Коснись текста ниже, чтобы открыть послание... ✨</p>
+            
+            <div class="secret-text-container">
+                <div class="secret-blurred" id="secret-blurred">
+                    ••••••••••••••••••••••••••••••••••••••••••
+                </div>
+                <div class="secret-clear" id="secret-clear" style="display: none;">
+                    Люблю тебя больше жизни ❤️
+                    <br>
+                    <small>Ещё раз коснись, чтобы скрыть</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="love-list">
+            <h3><i class="fas fa-star"></i> Почему я тебя люблю:</h3>
+            <ul>
+                <li><i class="fas fa-smile"></i> Твоя невероятная улыбка</li>
+                <li><i class="fas fa-hand-holding-heart"></i> Твоя забота и нежность</li>
+                <li><i class="fas fa-laugh"></i> Твоё чувство юмора</li>
+                <li><i class="fas fa-heart"></i> Ты всегда понимаешь меня</li>
+                <li><i class="fas fa-clock"></i> С тобой время летит незаметно</li>
+            </ul>
+        </div>
+        
+        <div class="signature">
+            Твоя мурка ❤️
+            <br>
+            <span id="date-placeholder"></span>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Сделано с <i class="fas fa-heart"></i> специально для тебя!</p>
+        <p><small>Обновляй страницу — здесь всегда что-то новое!</small></p>
+    </footer>
+
+    <!-- Окно с комплиментами -->
+    <div id="compliment-window">
+        <button id="close-compliment">×</button>
+        <h2><i class="fas fa-heart"></i> Комплимент для тебя!</h2>
+        <div id="compliment-text">Загрузка...</div>
+        <button id="new-compliment">
+            <i class="fas fa-redo"></i> Ещё комплимент
+        </button>
+        <div class="compliment-footer">
+            <i class="fas fa-star"></i> Ты заслуживаешь всех комплиментов!
+        </div>
+    </div>
+
+    <!-- Кнопка открытия комплиментов -->
+    <button id="open-compliment">
+        <i class="fas fa-comment-heart"></i>
+    </button>
+
+    <!-- Музыкальный плеер -->
+    <div id="music-player">
+        <audio id="background-music" loop>
+            <source src="music/love.mp3" type="audio/mpeg">
+            Твой браузер не поддерживает аудио
+        </audio>
+        <button id="music-btn">
+            <i class="fas fa-play" id="music-icon"></i>
+        </button>
+        <div id="volume-control">
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.3">
+        </div>
+    </div>
+
+    <!-- Плавающие сердечки -->
+    <div id="floating-hearts"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
